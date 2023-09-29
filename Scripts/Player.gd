@@ -5,10 +5,12 @@ extends CharacterBody2D
 @export_range(0, 1) var Accelleration = 0.8
 @export_range(0, 1) var Decelleration = 0.8
 
+@export var inventory : Inventory
+
+@onready var sprite : Sprite2D = $Sprite2D
+
 func _process(_delta):
-	var mousePosition = get_global_mouse_position()
-	var direction = mousePosition - global_position
-	rotation = direction.angle()
+	rotation = get_aim()
 
 func _physics_process(_delta):
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
@@ -19,3 +21,8 @@ func _physics_process(_delta):
 	velocity = velocity.lerp(targetVelocity, weight)
 
 	move_and_slide()
+
+func get_aim() -> float:
+	var mousePosition = get_global_mouse_position()
+	var direction = mousePosition - global_position
+	return direction.angle()

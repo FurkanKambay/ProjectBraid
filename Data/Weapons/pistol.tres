@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=3 format=3 uid="uid://m2v2f48rrx61"]
+
+[ext_resource type="Texture2D" uid="uid://bhxnf6ivba4nn" path="res://Sprites/kenney_tds/PNG/weapon_silencer.png" id="1_1kwgr"]
+[ext_resource type="Script" path="res://Scripts/Weapon.gd" id="2_ywmul"]
+
+[resource]
+script = ExtResource("2_ywmul")
+Name = "Silenced Pistol"
+Icon = ExtResource("1_1kwgr")
+Damage = 10.0
+MaxRange = 100.0
+FireRate = 2.0
+NoiseAmount = 5.0

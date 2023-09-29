@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Inventory" load_steps=5 format=3 uid="uid://csbo0bvwa6n6c"]
+
+[ext_resource type="Script" path="res://Scripts/Inventory.gd" id="1_rtplv"]
+[ext_resource type="Resource" uid="uid://lkef6nmnty8d" path="res://Data/Weapons/silenced_pistol.tres" id="2_8r38b"]
+[ext_resource type="Resource" uid="uid://m2v2f48rrx61" path="res://Data/Weapons/pistol.tres" id="3_tnctx"]
+[ext_resource type="Resource" uid="uid://cfjxvb38so30y" path="res://Data/Weapons/machine_gun.tres" id="4_55mhc"]
+
+[resource]
+script = ExtResource("1_rtplv")
+weapons = Array[Resource("res://Scripts/Weapon.gd")]([ExtResource("2_8r38b"), ExtResource("3_tnctx"), ExtResource("4_55mhc")])

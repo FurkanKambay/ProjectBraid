@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=3 format=3 uid="uid://lkef6nmnty8d"]
+
+[ext_resource type="Texture2D" uid="uid://d0rw5dq84dxkd" path="res://Sprites/kenney_tds/PNG/weapon_gun.png" id="1_w66as"]
+[ext_resource type="Script" path="res://Scripts/Weapon.gd" id="2_sucud"]
+
+[resource]
+script = ExtResource("2_sucud")
+Name = "Gun"
+Icon = ExtResource("1_w66as")
+Damage = 10.0
+MaxRange = 60.0
+FireRate = 2.0
+NoiseAmount = 1.0
