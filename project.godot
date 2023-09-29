@@ -20,6 +20,11 @@ boot_splash/show_image=false
 window/size/viewport_width=1280
 window/size/viewport_height=720
 
+[layer_names]
+
+2d_physics/layer_1="Character"
+2d_physics/layer_2="Wall"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
