@@ -12,6 +12,10 @@ layer_0/tile_data = PackedInt32Array(-196617, 1179648, 3, -131081, 1048576, 3, -
 
 [node name="Player" parent="." instance=ExtResource("2_nomri")]
 position = Vector2(483, 219)
-MaxSpeed = 300.0
-accelleration = 0.5
-decelleration = 0.5
+
+[node name="SpookItUp" type="CanvasModulate" parent="."]
+color = Color(0.568627, 0.568627, 0.568627, 1)
+
+[node name="Sun" type="DirectionalLight2D" parent="."]
+energy = 0.2
+shadow_enabled = true
