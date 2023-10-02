@@ -6,9 +6,7 @@ extends CharacterBody2D
 @export_range(0, 1) var Decelleration = 0.8
 
 func _process(_delta):
-	var mousePosition = get_global_mouse_position()
-	var direction = mousePosition - global_position
-	rotation = direction.angle()
+	look_at(get_global_mouse_position())
 
 func _physics_process(_delta):
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
