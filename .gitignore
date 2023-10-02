@@ -9,3 +9,6 @@
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 !*.code-workspace
+
+# Custom
+*.sqlite
