@@ -19,7 +19,6 @@ visible = false
 occluder = SubResource("OccluderPolygon2D_totpc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 shape = SubResource("CircleShape2D_awd7y")
 
 [node name="Camera2D" type="Camera2D" parent="."]
